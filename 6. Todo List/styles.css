@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+  max-width: 100vw;
+  background-color: blanchedalmond;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  text-align: center;
+  color: darkcyan;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2vh;
+}
+
+.add-button {
+  padding: 6px 12px;
+  font-weight: 600;
+  border-radius: 8px;
+  color: darkcyan;
+  border: 1px solid cadetblue;
+  margin: 2vh;
+}
+
+.input {
+  padding: 1vh;
+  margin: 1vh;
+  border: 1px solid cadetblue;
+  border-radius: 8px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  padding: 1vh;
+  font-size: small;
+  color: darkslategrey;
+  width: 100%;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* consistent spacing */
+  padding: 8px 12px;
+  margin: 4px 0;
+
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.delete-button {
+  padding: 6px 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+
+  border-radius: 6px;
+  color: firebrick;
+  border: 1px solid firebrick;
+  background-color: transparent;
+
+  white-space: nowrap; /* prevents width jumping */
+}
+
+.item-text {
+  flex: 1; /* takes remaining space */
+  text-align: left;
+  word-break: break-word;
+}
